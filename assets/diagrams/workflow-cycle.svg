@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Ciclo de trabajo del segundo cerebro</title>
+  <desc id="d">Seis pasos en ciclo: Capture, Organize, Connect, Process, Create y Review, que vuelve a Capture.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14101f"/>
+      <stop offset="1" stop-color="#231a3a"/>
+    </linearGradient>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e0b25c"/>
+    </marker>
+    <style>
+      .step { fill: #1d1630; stroke: #6c55c9; stroke-width: 1.5; }
+      .num { font: 700 13px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #e0b25c; letter-spacing: 1px; }
+      .name { font: 700 16px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #f3eefe; letter-spacing: 1px; }
+      .desc { font: 400 12.5px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #c9bfe6; }
+      .flow { stroke: #e0b25c; stroke-width: 1.8; fill: none; }
+      .back { stroke: #8f7fd1; stroke-width: 1.5; fill: none; stroke-dasharray: 6 5; }
+    </style>
+  </defs>
+  <rect width="960" height="300" rx="18" fill="url(#bg)"/>
+
+  <g>
+    <rect x="30" y="70" width="130" height="110" rx="12" class="step"/>
+    <text x="95" y="98" text-anchor="middle" class="num">01</text>
+    <text x="95" y="124" text-anchor="middle" class="name">CAPTURE</text>
+    <text x="95" y="148" text-anchor="middle" class="desc">00-INBOX</text>
+    <text x="95" y="166" text-anchor="middle" class="desc">nota diaria</text>
+  </g>
+  <g>
+    <rect x="186" y="70" width="130" height="110" rx="12" class="step"/>
+    <text x="251" y="98" text-anchor="middle" class="num">02</text>
+    <text x="251" y="124" text-anchor="middle" class="name">ORGANIZE</text>
+    <text x="251" y="148" text-anchor="middle" class="desc">PARA:</text>
+    <text x="251" y="166" text-anchor="middle" class="desc">01 a 04</text>
+  </g>
+  <g>
+    <rect x="342" y="70" width="130" height="110" rx="12" class="step"/>
+    <text x="407" y="98" text-anchor="middle" class="num">03</text>
+    <text x="407" y="124" text-anchor="middle" class="name">CONNECT</text>
+    <text x="407" y="148" text-anchor="middle" class="desc">enlaces, tags</text>
+    <text x="407" y="166" text-anchor="middle" class="desc">propiedades</text>
+  </g>
+  <g>
+    <rect x="498" y="70" width="130" height="110" rx="12" class="step"/>
+    <text x="563" y="98" text-anchor="middle" class="num">04</text>
+    <text x="563" y="124" text-anchor="middle" class="name">PROCESS</text>
+    <text x="563" y="148" text-anchor="middle" class="desc">notas</text>
+    <text x="563" y="166" text-anchor="middle" class="desc">permanentes</text>
+  </g>
+  <g>
+    <rect x="654" y="70" width="130" height="110" rx="12" class="step"/>
+    <text x="719" y="98" text-anchor="middle" class="num">05</text>
+    <text x="719" y="124" text-anchor="middle" class="name">CREATE</text>
+    <text x="719" y="148" text-anchor="middle" class="desc">proyectos</text>
+    <text x="719" y="166" text-anchor="middle" class="desc">documentos</text>
+  </g>
+  <g>
+    <rect x="810" y="70" width="120" height="110" rx="12" class="step"/>
+    <text x="870" y="98" text-anchor="middle" class="num">06</text>
+    <text x="870" y="124" text-anchor="middle" class="name">REVIEW</text>
+    <text x="870" y="148" text-anchor="middle" class="desc">revisión</text>
+    <text x="870" y="166" text-anchor="middle" class="desc">semanal</text>
+  </g>
+
+  <path d="M160 125 L 184 125" class="flow" marker-end="url(#a)"/>
+  <path d="M316 125 L 340 125" class="flow" marker-end="url(#a)"/>
+  <path d="M472 125 L 496 125" class="flow" marker-end="url(#a)"/>
+  <path d="M628 125 L 652 125" class="flow" marker-end="url(#a)"/>
+  <path d="M784 125 L 808 125" class="flow" marker-end="url(#a)"/>
+  <path d="M870 180 C 870 250, 95 250, 95 182" class="back" marker-end="url(#a)"/>
+  <text x="480" y="270" text-anchor="middle" class="desc">lo pendiente vuelve a la bandeja de entrada</text>
+</svg>

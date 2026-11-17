@@ -1,0 +1,12 @@
+filters:
+  and:
+    - 'tipo == "permanente"'
+views:
+  - type: table
+    name: Notas permanentes
+    limit: 50
+    order:
+      - file.name
+      - note.actualizado
+      - note.fuente
+      - file.backlinks

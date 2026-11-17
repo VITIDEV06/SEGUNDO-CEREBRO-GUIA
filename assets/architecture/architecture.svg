@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" role="img" aria-labelledby="t d">
+  <title id="t">Arquitectura de Second Brain AI</title>
+  <desc id="d">La persona usa Obsidian y un agente de IA (OpenCode o Claude Code). Ambos trabajan sobre la misma bóveda Markdown, que contiene las reglas compartidas en AGENTS.md. Git versiona la bóveda y GitHub la respalda en un repositorio privado.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14101f"/>
+      <stop offset="1" stop-color="#231a3a"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c9b8ff"/>
+    </marker>
+    <style>
+      .box { fill: #1d1630; stroke: #6c55c9; stroke-width: 1.5; }
+      .vault { fill: #2a1f47; stroke: #e0b25c; stroke-width: 2; }
+      .label { font: 600 17px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #f3eefe; }
+      .small { font: 400 13px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #c9bfe6; }
+      .tag { font: 600 12px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #e0b25c; letter-spacing: 1.5px; }
+      .mono { font: 400 12.5px Consolas, 'Courier New', monospace; fill: #e9e2ff; }
+      .line { stroke: #c9b8ff; stroke-width: 1.6; fill: none; }
+      .dash { stroke: #8f7fd1; stroke-width: 1.4; fill: none; stroke-dasharray: 5 4; }
+    </style>
+  </defs>
+  <rect width="960" height="540" rx="18" fill="url(#bg)"/>
+
+  <text x="40" y="44" class="tag">SECOND BRAIN AI — ARQUITECTURA</text>
+
+  <!-- Persona -->
+  <rect x="40" y="200" width="150" height="90" rx="12" class="box"/>
+  <text x="115" y="238" text-anchor="middle" class="label">Persona</text>
+  <text x="115" y="262" text-anchor="middle" class="small">decide y aprueba</text>
+
+  <!-- Obsidian -->
+  <rect x="250" y="80" width="200" height="90" rx="12" class="box"/>
+  <text x="350" y="118" text-anchor="middle" class="label">Obsidian</text>
+  <text x="350" y="142" text-anchor="middle" class="small">escribir, enlazar, navegar</text>
+
+  <!-- Agente -->
+  <rect x="250" y="320" width="200" height="150" rx="12" class="box"/>
+  <text x="350" y="352" text-anchor="middle" class="label">Agente de IA</text>
+  <rect x="268" y="368" width="164" height="36" rx="8" fill="#2a2145" stroke="#8f7fd1"/>
+  <text x="350" y="391" text-anchor="middle" class="mono">OpenCode</text>
+  <text x="350" y="420" text-anchor="middle" class="small">o</text>
+  <rect x="268" y="428" width="164" height="36" rx="8" fill="#2a2145" stroke="#8f7fd1"/>
+  <text x="350" y="451" text-anchor="middle" class="mono">Claude Code</text>
+
+  <!-- Bóveda -->
+  <rect x="520" y="80" width="250" height="390" rx="14" class="vault"/>
+  <text x="645" y="112" text-anchor="middle" class="label">Bóveda Markdown</text>
+  <text x="645" y="133" text-anchor="middle" class="small">fuente de verdad</text>
+  <g class="mono">
+    <text x="545" y="168">AGENTS.md</text>
+    <text x="545" y="194">00-INBOX/</text>
+    <text x="545" y="216">01-PROJECTS/</text>
+    <text x="545" y="238">02-AREAS/</text>
+    <text x="545" y="260">03-RESOURCES/</text>
+    <text x="545" y="282">04-ARCHIVE/</text>
+    <text x="545" y="304">05-PERSONAL/</text>
+    <text x="545" y="326">06-DAILY-NOTES/</text>
+    <text x="545" y="348">07-MEETINGS/</text>
+    <text x="545" y="370">08-IDEAS/</text>
+    <text x="545" y="392">09-AI-MEMORY/</text>
+    <text x="545" y="414">10-TEMPLATES/</text>
+    <text x="545" y="436">99-SYSTEM/</text>
+  </g>
+  <text x="705" y="168" class="small">reglas</text>
+  <text x="680" y="304" class="small">protegida</text>
+  <text x="680" y="392" class="small">contexto</text>
+
+  <!-- Git / GitHub -->
+  <rect x="820" y="160" width="110" height="80" rx="12" class="box"/>
+  <text x="875" y="195" text-anchor="middle" class="label">Git</text>
+  <text x="875" y="217" text-anchor="middle" class="small">historial</text>
+  <rect x="820" y="310" width="110" height="80" rx="12" class="box"/>
+  <text x="875" y="345" text-anchor="middle" class="label">GitHub</text>
+  <text x="875" y="367" text-anchor="middle" class="small">privado</text>
+
+  <!-- Conexiones -->
+  <path d="M190 230 C 220 200, 220 140, 250 128" class="line" marker-end="url(#arrow)"/>
+  <path d="M190 262 C 220 300, 220 380, 250 392" class="line" marker-end="url(#arrow)"/>
+  <path d="M450 125 L 520 125" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <path d="M450 395 L 520 395" class="line" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="485" y="385" text-anchor="middle" class="small">permisos</text>
+  <path d="M770 200 L 820 200" class="line" marker-end="url(#arrow)"/>
+  <path d="M875 240 L 875 310" class="dash" marker-end="url(#arrow)"/>
+  <text x="884" y="280" class="small">push</text>
+
+  <text x="40" y="512" class="small">Las reglas viven en la bóveda (AGENTS.md y 99-SYSTEM/rules); cada agente solo añade su propia configuración de permisos, agentes y comandos.</text>
+</svg>

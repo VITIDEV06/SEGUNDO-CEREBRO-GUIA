@@ -1,0 +1,11 @@
+# Normaliza los saltos de línea a LF en el repositorio, sea cual sea el sistema
+# operativo de quien contribuye. Evita diffs "fantasma" entre Windows y macOS/Linux.
+* text=auto eol=lf
+
+# Archivos binarios: nunca se convierten.
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary

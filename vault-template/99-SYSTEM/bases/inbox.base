@@ -1,0 +1,11 @@
+filters:
+  and:
+    - file.inFolder("00-INBOX")
+    - 'file.ext == "md"'
+views:
+  - type: table
+    name: Pendiente de procesar
+    order:
+      - file.name
+      - file.ctime
+      - file.size

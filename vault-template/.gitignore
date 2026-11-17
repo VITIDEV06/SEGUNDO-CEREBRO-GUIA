@@ -1,0 +1,32 @@
+# .gitignore de TU BÓVEDA (se copia con la plantilla).
+# Explicación completa: docs/12-security-privacy.md del repositorio second-brain-ai.
+
+# --- Datos sensibles ---------------------------------------------------------
+# Por defecto 05-PERSONAL NO se sube, ni siquiera a un repositorio privado.
+# Si quieres respaldarla en GitHub, borra estas dos líneas conscientemente.
+05-PERSONAL/*
+!05-PERSONAL/LEEME-personal.md
+
+# --- Secretos ----------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+
+# --- Estado volátil de Obsidian ----------------------------------------------
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+.obsidian/cache
+.obsidian/graph.json
+.obsidian/plugins/*/data.json
+.trash/
+
+# --- Configuración local de agentes ------------------------------------------
+.claude/settings.local.json
+CLAUDE.local.md
+
+# --- Sistema operativo -------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini

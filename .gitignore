@@ -1,0 +1,120 @@
+# =============================================================================
+# .gitignore — Second Brain AI
+# -----------------------------------------------------------------------------
+# Git ignora los archivos que coinciden con estos patrones: nunca se suben a
+# GitHub. Revisa la guía docs/12-security-privacy.md antes de modificarlo.
+#
+# IMPORTANTE: .gitignore solo afecta a archivos que todavía NO están
+# versionados. Si ya subiste un archivo por error, ignorarlo después no lo
+# borra del historial. Consulta docs/12-security-privacy.md, sección
+# "Subí un secreto por error".
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. Credenciales y secretos (lo más importante de este archivo)
+# -----------------------------------------------------------------------------
+# Variables de entorno con API keys. Sí se versiona .env.example (sin valores).
+.env
+.env.*
+!.env.example
+# Claves y certificados
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+# Archivos con nombre de secreto
+*.secret
+*.secrets
+secrets/
+credentials.json
+token.json
+
+# -----------------------------------------------------------------------------
+# 2. Contenido privado de una bóveda real
+# -----------------------------------------------------------------------------
+# Este repositorio publica una PLANTILLA. Si usas este mismo repositorio como
+# tu bóveda personal, estas carpetas no deben salir de tu equipo. En la
+# plantilla, cada una contiene un único archivo explicativo que sí se versiona.
+vault-template/05-PERSONAL/*
+!vault-template/05-PERSONAL/LEEME-personal.md
+vault-template/09-AI-MEMORY/sesiones/*
+!vault-template/09-AI-MEMORY/sesiones/LEEME-sesiones.md
+# Cualquier carpeta llamada "private" o "privado" en cualquier nivel
+**/private/
+**/privado/
+
+# -----------------------------------------------------------------------------
+# 3. Obsidian
+# -----------------------------------------------------------------------------
+# Se versiona la configuración útil (.obsidian/app.json, templates.json,
+# daily-notes.json, core-plugins.json) y se ignora el estado volátil.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspaces.json
+.obsidian/cache
+.obsidian/graph.json
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+**/.obsidian/workspaces.json
+**/.obsidian/cache
+# Plugins de la comunidad: pueden contener tokens de sincronización.
+**/.obsidian/plugins/*/data.json
+# Papelera interna de Obsidian
+.trash/
+**/.trash/
+
+# -----------------------------------------------------------------------------
+# 4. Configuración LOCAL de los agentes (personal, no compartida)
+# -----------------------------------------------------------------------------
+# Claude Code: settings.local.json y CLAUDE.local.md son personales.
+.claude/settings.local.json
+**/.claude/settings.local.json
+CLAUDE.local.md
+**/CLAUDE.local.md
+
+# -----------------------------------------------------------------------------
+# 5. Sistemas operativos
+# -----------------------------------------------------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+# Linux
+*~
+.directory
+
+# -----------------------------------------------------------------------------
+# 6. Editores y herramientas de desarrollo
+# -----------------------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# Python (scripts/)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Node (por si añades herramientas como mermaid-cli)
+node_modules/
+
+# -----------------------------------------------------------------------------
+# 7. Archivos temporales y exportaciones
+# -----------------------------------------------------------------------------
+*.tmp
+*.bak
+*.log
+backups/
+exports/

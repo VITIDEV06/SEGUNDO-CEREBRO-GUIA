@@ -1,0 +1,16 @@
+filters:
+  and:
+    - file.inFolder("01-PROJECTS")
+    - 'tipo == "proyecto"'
+views:
+  - type: table
+    name: Proyectos por estado
+    groupBy:
+      property: note.estado
+      direction: ASC
+    order:
+      - file.name
+      - note.estado
+      - note.area
+      - note.fecha_limite
+      - note.actualizado

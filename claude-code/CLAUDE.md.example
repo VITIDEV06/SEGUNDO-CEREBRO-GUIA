@@ -1,0 +1,20 @@
+# Instrucciones para Claude Code
+
+Las reglas de esta bóveda son las mismas para cualquier agente de IA y viven en `AGENTS.md`. Este archivo las importa para no duplicarlas.
+
+@AGENTS.md
+
+## Convenciones detalladas
+
+@99-SYSTEM/rules/conventions.md
+@99-SYSTEM/rules/privacy.md
+@99-SYSTEM/rules/agent-behavior.md
+
+La guía de calidad de notas (`99-SYSTEM/rules/note-quality.md`) no se importa para ahorrar contexto: léela cuando vayas a crear o reescribir notas permanentes.
+
+## Específico de Claude Code
+
+- Subagentes disponibles en `.claude/agents/`: `knowledge-manager`, `research-assistant`, `project-manager`, `note-processor`, `learning-assistant`, `memory-assistant`, `vault-auditor`. Delega cuando la tarea encaje con su descripción.
+- Skills disponibles (se invocan con `/nombre`): `/capturar`, `/procesar-inbox`, `/nuevo-proyecto`, `/contexto-proyecto`, `/revision-semanal`, `/auditar-boveda`, `/sincronizar`.
+- Para mover una nota usa `git mv` si la bóveda es un repositorio Git; si no, `mv` (Bash) o `Move-Item` (PowerShell). Después actualiza los enlaces que apuntaban a ella.
+- Los permisos de `.claude/settings.json` deniegan borrar archivos, `git push` y editar `05-PERSONAL/`. No intentes rodearlos con otros comandos.

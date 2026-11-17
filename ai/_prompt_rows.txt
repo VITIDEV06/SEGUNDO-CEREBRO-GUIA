@@ -1,0 +1,17 @@
+| 00 | [Prompt maestro: sincronizar y mantener el segundo cerebro](00-prompt-maestro-sincronizacion.md) | Una vez por semana (puede sustituir a la revisión semanal) o después de un periodo sin mantener la bóveda. |
+| 01 | [Capturar una nueva idea](01-capturar-idea.md) | En cuanto surge una idea, una frase o un dato que quieres conservar. |
+| 02 | [Procesar notas desorganizadas](02-procesar-notas-desorganizadas.md) | Cuando `00-INBOX/` acumula notas, o al importar notas de otra aplicación. |
+| 03 | [Resumir documentos](03-resumir-documento.md) | Después de leer un artículo, capítulo, informe o transcripción que quieres conservar. |
+| 04 | [Crear notas permanentes](04-crear-notas-permanentes.md) | Al procesar resúmenes, notas de aprendizaje o capturas con ideas valiosas. |
+| 05 | [Relacionar conocimientos existentes](05-relacionar-conocimientos.md) | Tras crear notas nuevas, o cuando el grafo muestra muchas notas huérfanas. |
+| 06 | [Investigar un tema](06-investigar-tema.md) | Antes de estudiar un tema nuevo, preparar una clase o tomar una decisión informada. |
+| 07 | [Analizar un proyecto](07-analizar-proyecto.md) | Antes de una reunión de seguimiento, cuando un proyecto parece estancado o en la revisión semanal. |
+| 08 | [Crear un nuevo proyecto](08-crear-proyecto.md) | Al empezar cualquier trabajo con objetivo y fecha de fin. |
+| 09 | [Actualizar información existente](09-actualizar-informacion.md) | Cuando algo cambió (una decisión, un dato, una versión de software) o aprendiste algo que corrige una nota. |
+| 10 | [Detectar información duplicada](10-detectar-duplicados.md) | Mensualmente, o cuando sospechas que escribiste lo mismo dos veces. |
+| 11 | [Realizar revisión semanal](11-revision-semanal.md) | Una vez por semana, siempre el mismo día. |
+| 12 | [Preparar una sesión de estudio](12-preparar-sesion-estudio.md) | Antes de estudiar un tema que ya tiene notas en la bóveda. |
+| 13 | [Crear un mapa de conocimientos](13-mapa-de-conocimientos.md) | Cuando un tema supera unas 10 notas o quieres una visión de conjunto. |
+| 14 | [Actualizar el índice de la bóveda](14-actualizar-indice.md) | Tras crear o archivar proyectos, áreas o MOC; como parte de la revisión semanal. |
+| 15 | [Generar un informe de actividad](15-informe-actividad.md) | Al final de un mes o trimestre, antes de una evaluación o para un informe de avance. |
+| 16 | [Recuperar contexto de proyectos anteriores](16-recuperar-contexto-proyecto.md) | Al volver a un proyecto tras semanas sin tocarlo, o al empezar uno parecido a otro ya terminado. |
